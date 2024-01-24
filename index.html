@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário Camis 18</title>
+</head>
+<style>
+    body {
+        background-color: #ff00aa;
+        overflow: hidden;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        margin: 0 20px;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .img{
+        display: block;
+        background-image: url('./src/images/Convite\ virtual\ aniversário\ infantil.png');
+        background-color: #fff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        transition: .3s all;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.8);
+    }
+</style>
+<body>
+    
+    <div class="center">
+        <div class="img"></div>
+    </div>
+    <div class="btn">
+        <button id="sim"><a href="https://drive.google.com/file/d/1cS5p3xx8C5RspvoNZ4mc_53xASrZD5BT/view?usp=drive_link">Sim</a></button>
+        <button id="nao">Não</button>
+    </div>
+</body>
+<script>
+    const naoBtn = document.querySelector('#nao');
+
+    naoBtn.addEventListener('mouseover', () => {
+        naoBtn.style.position = 'absolute';
+        naoBtn.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+        naoBtn.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
+    });
+</script>
+</html>
