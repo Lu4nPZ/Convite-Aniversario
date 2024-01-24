@@ -50,13 +50,21 @@
         <div class="img"></div>
     </div>
     <div class="btn">
-        <button id="sim"><a href="https://drive.google.com/file/d/1cS5p3xx8C5RspvoNZ4mc_53xASrZD5BT/view?usp=drive_link">Sim</a></button>
+        <button id="sim"><a href="https://drive.google.com/file/d/1cS5p3xx8C5RspvoNZ4mc_53xASrZD5BT/view?pli=1">Sim</a></button>
         <button id="nao">Não</button>
     </div>
 </body>
 <script>
     const naoBtn = document.querySelector('#nao');
+    const simBtn = document.querySelector('#sim');
+    const img = document.querySelector('.img');
 
+    simBtn.addEventListener('mouseover', ()=>{
+        img.style.backgroundImage = "url(https://www.canva.com/design/DAF6wnjvc04/Fh69apUZfrBbOTb4DTvnrg/edit?layoutQuery=convite+aniversário)"
+    });
+    simBtn.addEventListener('mouseout', ()=>{
+        img.style.backgroundImage = "url(https://www.canva.com/design/DAF6wnjvc04/Fh69apUZfrBbOTb4DTvnrg/edit?layoutQuery=convite+aniversário)"
+    });
     naoBtn.addEventListener('mouseover', () => {
         naoBtn.style.position = 'absolute';
         naoBtn.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
